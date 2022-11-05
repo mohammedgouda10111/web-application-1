@@ -1,0 +1,101 @@
+body{
+    background-color: rgba(189, 64, 19, 0.361);
+}
+.navbar img{
+    width: 70px;
+    border-radius: 50px;
+}
+.header{
+    background-color:transparent;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    background-color: antiquewhite;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+}
+.header .navbar-light .navbar-nav .nav-link{
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    background-color: #cecece;
+}
+.icon{
+    font-size: 20px;
+}
+.icon .i2{
+    padding-right: 20px;
+}
+.home{
+    position: relative;
+}
+.products h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.products hr{
+    margin: auto;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    transition: all .5s;
+}
+.products:hover hr{
+    width: 150px;
+}
+.row figcaption{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+.row p{
+    text-align: center;
+    font-size: 15px;
+}
+/*  */
+.cardss{
+    padding: 60px 0;
+}
+.cardss .card{
+   margin-top: 25px;
+   background-color: transparent;  
+   transition: all .5s;
+}
+.cardss .card:hover{
+    transform: translateY(-10px);
+   box-shadow: 0px 0px 28px #cecece;
+}
+.cardss .card .overlay::after{
+   content: "";
+   /* background-color: rgba(102, 102, 102, 0.685); */
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   inset: 0;
+   z-index: 99;
+   opacity: 0;
+   transition: all .5s;
+}
+.cardss .card:hover .overlay::after{
+   opacity: 1;
+}
+/*  */
+
+#content{
+    width: 50%;
+    height: 50px;
+    border: 2px solid rgba(27, 21, 1, 0.833);
+    border-radius: 2px;
+    margin: auto; 
+} 
+#cardprice{
+    width: 25%;
+    height: 50px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: auto; 
+} 
